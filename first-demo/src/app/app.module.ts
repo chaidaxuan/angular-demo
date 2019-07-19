@@ -12,7 +12,8 @@ import { RouterModule } from '@angular/router';
 import { CartComponent } from './cart/cart.component';
 import { from } from 'rxjs';
 import { ShippingComponent } from './shipping/shipping.component';
-
+import { TestComponent } from './test/test.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,12 +22,14 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
@@ -38,3 +41,4 @@ import { ShippingComponent } from './shipping/shipping.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export class PizzaPartyAppModule { }

@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { from } from 'rxjs';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NameEditorComponent } from './name-editor/name-editor.component';
+import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent
+    HeroesComponent,
+    NameEditorComponent,
+    ProfileEditorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
