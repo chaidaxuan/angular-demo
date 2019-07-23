@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+// import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+// @NgModule({
 
+//   imports: [MatButtonModule, MatCheckboxModule],
+
+// })
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',

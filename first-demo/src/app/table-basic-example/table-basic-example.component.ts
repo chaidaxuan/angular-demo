@@ -1,33 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { products } from '../products';
-import { from } from 'rxjs';
-@Component({
-  selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.less']
-})
-export class ProductListComponent implements OnInit {
-  products = products;
-  constructor() { }
-
-
-
-  ngOnInit() {
-  }
-  share() {
-    window.alert('The product has been shared!');
-  }
-
-  onNotify() {
-    window.alert('You will be notified when the product goes on sale');
-  }
-}
 export interface PeriodicElement {
   name: string;
   position: number;
   weight: number;
   symbol: string;
 }
+
 
 const ELEMENT_DATA: PeriodicElement[] = [
   { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
@@ -41,8 +19,19 @@ const ELEMENT_DATA: PeriodicElement[] = [
   { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
   { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
 ];
-export class TableBasicExample {
+@Component({
+  selector: 'app-table-basic-example',
+  templateUrl: './table-basic-example.component.html',
+  styleUrls: ['./table-basic-example.component.less']
+})
+
+export class TableBasicExampleComponent implements OnInit {
+
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
+  constructor() { }
+
+  ngOnInit() {
+  }
 }
 

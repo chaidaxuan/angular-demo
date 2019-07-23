@@ -1,5 +1,14 @@
-import { enableProdMode } from '@angular/core';
+
+
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { enableProdMode } from '@angular/core';
+
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
